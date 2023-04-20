@@ -1,0 +1,12 @@
+{
+    "files.associations": {
+        "evdev.h": "c",
+        "xf86drm.h": "c",
+        "xf86drmmode.h": "c",
+        "lv_demos.h": "c",
+        "drm_fourcc.h": "c",
+        "stdint.h": "c",
+        "drm.h": "c",
+        "lv_port_disp_template.h": "c"
+    }
+}
