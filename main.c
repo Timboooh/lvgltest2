@@ -51,8 +51,8 @@ int main(void)
     drm_get_sizes(&w,&h,&d);
     LV_LOG_INFO("drm_get_sizes %dx %d , dpi %d \n", w, h, d );
     /*Set the resolution of the display*/
-    disp_drv.hor_res = h;
-    disp_drv.ver_res = w;
+    disp_drv.hor_res = w;
+    disp_drv.ver_res = h;
 
     /*Used to copy the buffer's content to the display*/
     disp_drv.flush_cb = disp_flush;
@@ -94,7 +94,9 @@ int main(void)
     // lv_disp_drv_register(&disp_drv);
 
     /*Create a Demo*/
-    lv_demo_widgets();
+    //lv_demo_widgets();
+
+    lv_demo_music();
 
     /*Handle LitlevGL tasks (tickless mode)*/
     while(1) {
